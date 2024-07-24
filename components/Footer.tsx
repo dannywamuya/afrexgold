@@ -10,12 +10,12 @@ interface FooterLink {
 const Footer: React.FC = () => {
 	const usefulLinks: FooterLink[] = [
 		{ text: 'Facility', href: '/facility' },
-		{ text: 'Community', href: '/community' },
+		{ text: 'Community', href: 'https://impact.afrexgold.co.ke' },
 		{ text: 'Products', href: '/exports' },
 		{ text: 'Careers', href: '/careers' },
 	];
 
-	const informationLinks: string[] = ['FAQs', 'Blog'];
+	// const informationLinks: string[] = ['FAQs', 'Blog'];
 	const addressLines: string[] = ['P.O BOX 5157-00506', 'Nairobi, Kenya'];
 
 	return (
@@ -33,19 +33,20 @@ const Footer: React.FC = () => {
 							className='max-w-[10rem]'
 						/>
 					</Link>
-					<p className='text-center font-karla text-sm text-bg-primary w-full lg:w-[85%] leading-5 mt-2'>
+					<p className='font-karla  text-bg-primary w-full lg:w-[85%] leading-5 mt-2'>
 						Proudly Kenyan exporters of fresh fruits and vegetables for more
 						than 20 years!
 					</p>
 				</div>
 				<div className='flex flex-col lg:flex-row mt-12 lg:mt-0'>
 					<div className='mx-0 lg:mx-12 mb-4 lg:mb-0 text-center lg:text-left'>
-						<p className='font-nunito text-sm text-bg-primary'>Useful Links</p>
-						<ul className='mt-4 list-none font-karla text-sm'>
+						<p className='font-nunito  text-bg-primary'>Useful Links</p>
+						<ul className='mt-4 list-none font-karla'>
 							{usefulLinks.map((link, index) => (
 								<li key={index} className='leading-5 text-bg-primary-variant'>
 									<Link
 										href={link.href}
+										target={`${link.text === 'Community' ? '_blank' : '_self'}`}
 										className='no-underline text-bg-primary-variant cursor-pointer'>
 										{link.text}
 									</Link>
@@ -53,19 +54,9 @@ const Footer: React.FC = () => {
 							))}
 						</ul>
 					</div>
-					<div className='mx-0 lg:mx-12 mb-4 lg:mb-0 text-center lg:text-left'>
-						<p className='font-nunito text-sm text-bg-primary'>Information</p>
-						<ul className='mt-4 list-none font-karla text-sm'>
-							{informationLinks.map((link, index) => (
-								<li key={index} className='leading-5 text-bg-primary-variant'>
-									{link}
-								</li>
-							))}
-						</ul>
-					</div>
 					<div className='mx-0 lg:mx-20 text-center lg:text-left'>
-						<p className='font-nunito text-sm text-bg-primary'>Address</p>
-						<ul className='mt-4 list-none font-karla text-sm'>
+						<p className='font-nunito  text-bg-primary'>Address</p>
+						<ul className='mt-4 list-none font-karla '>
 							{addressLines.map((line, index) => (
 								<li key={index} className='leading-5 text-bg-primary-variant'>
 									{line}
@@ -75,7 +66,7 @@ const Footer: React.FC = () => {
 					</div>
 				</div>
 			</div>
-			<div className='mt-12 w-full text-center font-karla text-sm text-bg-primary'>
+			<div className='mt-12 w-full text-center font-karla  text-bg-primary'>
 				<p>
 					All Rights Reserved by{' '}
 					<span className='text-bg-primary-variant'>

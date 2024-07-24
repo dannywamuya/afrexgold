@@ -40,7 +40,7 @@ const Location: React.FC = () => {
 			<div className='grid grid-cols-1 lg:grid-cols-2 bg-bg-primary'>
 				<div className='p-8 z-50 flex flex-col justify-center'>
 					<p className='font-nunito font-semibold text-lg mb-4'>Our Location</p>
-					<div className='font-karla text-sm mb-4'>
+					<div className='font-karla  mb-4'>
 						<p>
 							Our facility is strategically located in Thika which allows access
 							to Kenya&apos;s main Avocado production region. Majority of our
@@ -68,7 +68,7 @@ const Location: React.FC = () => {
 									target='_blank'
 									rel='noopener noreferrer'
 									className='no-underline text-text-secondary-variant'>
-									<p className='font-karla text-sm mt-2'>{item.text}</p>
+									<p className='font-karla  mt-2'>{item.text}</p>
 								</a>
 							</div>
 						))}

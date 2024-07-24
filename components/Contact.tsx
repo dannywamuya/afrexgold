@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
 	};
 
 	return (
-		<div
+		<section
 			className='bg-bg-primary px-8 md:px-16 m-0 min-h-screen overflow-hidden'
 			id='contact'>
 			<p className='float-right p-0 mt-2 font-karla font-extrabold text-4xl text-bg-primary-variant transition-all duration-1000'>
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
 							<h5 className='w-full text-left mb-6 font-nunito text-base'>
 								Get In Touch
 							</h5>
-							<p className='w-full mb-6 font-karla text-sm'>
+							<p className='w-full mb-6 font-karla '>
 								Let&apos;s work together. Reach out in case of any inquiries,
 								messages or questions.
 							</p>
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
 										className='mr-3'
 										alt=''
 									/>
-									<p className='font-karla text-sm'>{item.text}</p>
+									<p className='font-karla '>{item.text}</p>
 								</div>
 							))}
 						</div>
@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
 									<input
 										type={field === 'email' ? 'email' : 'text'}
 										name={field}
-										className={`w-full outline-none border-2 border-bg-primary-variant bg-transparent py-2 px-4 text-text-primary font-karla text-sm rounded-lg transition-all duration-300 ${
+										className={`w-full outline-none border-2 border-bg-primary-variant bg-transparent py-2 px-4 text-text-primary font-karla  rounded-lg transition-all duration-300 ${
 											focusedInputs[field] ? 'placeholder-transparent' : ''
 										}`}
 										id={field}
@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
 										required
 									/>
 									<span
-										className={`absolute top-0 left-4 -translate-y-1/2 text-sm font-karla text-gray-500 px-2 pointer-events-none z-50 bg-bg-primary transition-all duration-500 delay-100 ${
+										className={`absolute top-0 left-4 -translate-y-1/2  font-karla text-gray-500 px-2 pointer-events-none z-50 bg-bg-primary transition-all duration-500 delay-100 ${
 											focusedInputs[field] ? 'block' : 'hidden'
 										}`}>
 										{field.charAt(0).toUpperCase() + field.slice(1)}
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
 							<div className='relative my-4'>
 								<textarea
 									name='message'
-									className={`w-full outline-none border-2 border-bg-primary-variant bg-transparent py-3 px-5 text-text-primary font-karla text-sm rounded-lg min-h-[170px] resize-none transition-all duration-300 ${
+									className={`w-full outline-none border-2 border-bg-primary-variant bg-transparent py-3 px-5 text-text-primary font-karla  rounded-lg min-h-[170px] resize-none transition-all duration-300 ${
 										focusedInputs.message ? 'placeholder-transparent' : ''
 									}`}
 									id='message'
@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
 									value={formData.message}
 									required></textarea>
 								<span
-									className={`absolute top-0 left-4 -translate-y-1/2 text-sm font-karla text-gray-500 px-2 pointer-events-none z-50 bg-bg-primary transition-all duration-500 delay-100 ${
+									className={`absolute top-0 left-4 -translate-y-1/2  font-karla text-gray-500 px-2 pointer-events-none z-50 bg-bg-primary transition-all duration-500 delay-100 ${
 										focusedInputs.message ? 'block' : 'hidden'
 									}`}>
 									Message
@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

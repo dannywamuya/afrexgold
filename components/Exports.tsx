@@ -233,14 +233,14 @@ function Accordion({ group }: { group: (typeof productsData)[0] }) {
 								active.name === item.name
 									? 'hidden md:flex md:slide-in'
 									: 'hidden'
-							} fade-in flex-col justify-center px-2 bg-bg-primary-variant text-sm overflow-hidden`}>
+							} fade-in flex-col justify-center px-2 bg-bg-primary-variant  overflow-hidden`}>
 							<p className='font-bold'>{item.name}</p>
 							<p>{item.varieties}</p>
 						</div>
 					</div>
 				))}
 			</div>
-			<div className='w-full text-sm flex flex-col-reverse md:flex-row justify-between min-h-[200px] md:min-h-[500px]'>
+			<div className='w-full  flex flex-col-reverse md:flex-row justify-between min-h-[200px] md:min-h-[500px]'>
 				<div className='w-full md:w-1/2 space-y-4 p-4 text-bg-primary-variant h-auto bg-bg-secondary'>
 					<p>{active.description}</p>
 					<p>Varieties:</p>

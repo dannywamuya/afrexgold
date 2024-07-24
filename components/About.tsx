@@ -17,7 +17,7 @@ export default function About() {
 						<p className='font-nunito text-xl font-semibold mb-4'>
 							Company Profile
 						</p>
-						<p className='bg-gradient-to-r from-[#5dc293] to-[#52b788b2] rounded-md p-6 text-text-primary text-sm font-karla leading-6 transition-all duration-2000 ease-in-out'>
+						<p className='bg-gradient-to-r from-[#5dc293] to-[#52b788b2] rounded-md p-6 text-text-primary  font-karla leading-6 transition-all duration-2000 ease-in-out'>
 							<strong>Afrex Gold Limited</strong> was founded in the year 2000
 							inspired by the growth in demand for premium fruits and vegetables
 							from East Africa.
@@ -46,7 +46,7 @@ export default function About() {
 						<p className='font-nunito text-xl font-semibold text-right mb-4'>
 							Our Facility
 						</p>
-						<p className='relative md:-ml-48 z-10 p-6 rounded-md bg-gradient-to-l from-[#52b788b2] to-[#5dc293] text-text-primary text-sm font-karla leading-6 transition-all duration-2000 ease-in-out'>
+						<p className='relative md:-ml-48 z-10 p-6 rounded-md bg-gradient-to-l from-[#52b788b2] to-[#5dc293] text-text-primary  font-karla leading-6 transition-all duration-2000 ease-in-out'>
 							We are located in a Thika, Kenya where we house our state of the
 							art avocado processing line capable of processing 3 tonnes of
 							avocado every hour all sourced sustainably while undergoing
@@ -65,7 +65,7 @@ export default function About() {
 						<p className='font-nunito text-xl font-semibold text-right mb-4'>
 							Social Impact
 						</p>
-						<p className='bg-gradient-to-r from-[#5dc293] to-[#52b788b2] rounded-md p-6 text-text-primary text-sm font-karla leading-6 transition-all duration-2000 ease-in-out'>
+						<p className='bg-gradient-to-r from-[#5dc293] to-[#52b788b2] rounded-md p-6 text-text-primary  font-karla leading-6 transition-all duration-2000 ease-in-out'>
 							Afrex Gold Limited is committed to working with all stakeholders
 							in agribusiness.
 							<br />
