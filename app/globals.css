@@ -46,3 +46,19 @@ body {
 .fade-in {
 	animation: fadeIn 0.4s ease-in-out;
 }
+
+.slide-in {
+	position: relative;
+	animation: slideIn 0.6s ease-in-out;
+	display: flex;
+	right: 0;
+}
+
+@keyframes slideIn {
+	from {
+		right: 10%;
+	}
+	to {
+		right: 0;
+	}
+}

@@ -55,12 +55,14 @@ const Location: React.FC = () => {
 					<div className='flex flex-wrap'>
 						{complianceItems.map((item, index) => (
 							<div key={index} className='p-4 pl-0 w-full sm:w-1/2'>
-								<Image
-									src={item.imgSrc}
-									alt={item.text}
-									width={100}
-									height={100}
-								/>
+								<div className='w-auto h-[60px] relative'>
+									<Image
+										src={item.imgSrc}
+										alt={item.text}
+										fill
+										className='object-contain'
+									/>
+								</div>
 								<a
 									href={item.url}
 									target='_blank'

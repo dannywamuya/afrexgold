@@ -12,8 +12,6 @@ const Footer: React.FC = () => {
 		{ text: 'Facility', href: '/facility' },
 		{ text: 'Community', href: '/community' },
 		{ text: 'Products', href: '/exports' },
-		{ text: 'Processing', href: '/processing' },
-		{ text: 'Logistics', href: '/logistics' },
 		{ text: 'Careers', href: '/careers' },
 	];
 
@@ -26,13 +24,15 @@ const Footer: React.FC = () => {
 			id='footer'>
 			<div className='grid grid-cols-1 lg:grid-cols-2'>
 				<div className='flex flex-col items-center lg:items-start'>
-					<Image
-						src='/squarelogo3.png'
-						alt='Afrex Gold Logo'
-						width={160}
-						height={160}
-						className='max-w-[10rem]'
-					/>
+					<Link href={'/'}>
+						<Image
+							src='/squarelogo3.png'
+							alt='Afrex Gold Logo'
+							width={160}
+							height={160}
+							className='max-w-[10rem]'
+						/>
+					</Link>
 					<p className='text-center font-karla text-sm text-bg-primary w-full lg:w-[85%] leading-5 mt-2'>
 						Proudly Kenyan exporters of fresh fruits and vegetables for more
 						than 20 years!
