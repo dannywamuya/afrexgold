@@ -10,7 +10,7 @@ interface FooterLink {
 const Footer: React.FC = () => {
 	const usefulLinks: FooterLink[] = [
 		{ text: 'Facility', href: '/facility' },
-		{ text: 'Community', href: 'https://impact.afrexgold.co.ke' },
+		{ text: 'Impact', href: '/impact' },
 		{ text: 'Products', href: '/exports' },
 		{ text: 'Careers', href: '/careers' },
 	];
@@ -46,7 +46,6 @@ const Footer: React.FC = () => {
 								<li key={index} className='leading-5 text-bg-primary-variant'>
 									<Link
 										href={link.href}
-										target={`${link.text === 'Community' ? '_blank' : '_self'}`}
 										className='no-underline text-bg-primary-variant cursor-pointer'>
 										{link.text}
 									</Link>
