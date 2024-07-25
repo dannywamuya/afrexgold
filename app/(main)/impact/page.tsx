@@ -14,7 +14,7 @@ export default function Page() {
 		<main className='max-w-screen'>
 			{/* Section 1 */}
 			<div
-				className='bg-cover bg-center h-[75svh] flex items-center justify-center'
+				className='bg-cover bg-center h-[50vh] mt-16 flex items-center justify-center'
 				style={{
 					backgroundImage: 'url("/images/Section_1.jpg")',
 					filter: 'grayscale(.6)',
