@@ -171,6 +171,11 @@ const ProductToggle = ({
 				{ id: 'herbs', src: '/mortar.png', alt: 'Herbs' },
 			].map((item, index) => (
 				<span
+					onKeyDown={(e) => {
+						if (e.key === 'Enter') handleToggle(index);
+					}}
+					autoFocus
+					tabIndex={0}
 					key={item.id}
 					className={`cursor-pointer p-2 ${
 						activeToggle === index ? 'bg-gray-300 rounded-full' : ''
@@ -213,6 +218,10 @@ function Accordion({ group }: { group: (typeof productsData)[0] }) {
 			<div className='w-full flex bg-bg-secondary h-[100px] mb-1'>
 				{group.items.map((item, idx) => (
 					<div
+						onKeyDown={(e) => {
+							if (e.key === 'Enter') setActive(item);
+						}}
+						tabIndex={0}
 						onClick={() => setActive(item)}
 						className={`h-full w-fit border-r border-bg-secondary flex`}
 						key={item.name}>

@@ -8,6 +8,7 @@ export default function Layout({
 	return (
 		<>
 			<Header />
+			<div className='mt-[4.5rem]' />
 			{children}
 		</>
 	);
